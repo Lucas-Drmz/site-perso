@@ -1,0 +1,52 @@
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 10% 1fr 10%;
+    grid-template-areas: 
+        "aside header"
+        "aside main"
+        "footer footer";
+    gap: 1em;
+}
+
+header {
+    grid-area: header;
+    background-color: blue;
+    display: grid;
+}
+
+nav {
+    align-self: center;
+    background-color: blueviolet;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+aside {
+    grid-area: aside;
+    background-color: red;
+}
+
+main {
+    grid-area: main;
+    background-color: yellow;
+}
+
+footer {
+    grid-area: footer;
+    background-color: blue;
+}
