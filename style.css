@@ -1,14 +1,19 @@
+/* Layout with responsive design */
 @media screen and (max-width:1100px) {
     .container {
         min-height: 100vh;
         display: grid;
         grid-template-rows: auto auto 1fr auto;
         grid-template-areas: 
-            "header"
             "aside"
+            "header"
             "main"
             "footer";
         gap: 0.5em;
+    }
+
+    body {
+        font-size: 1.8vw;
     }
 
     .profilepic{
@@ -34,14 +39,20 @@
         gap: 1em;
     }
 
+    body {
+        font-size: 1vw;
+    }
+
     img.profilepic {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 4em;
     }
 
     h1 {
         text-align: center;
+        margin-bottom: 2em;
     }
 }
 
@@ -53,6 +64,7 @@ body p {
     text-align: justify;
 }
 
+/* Navigation */
 header {
     grid-area: header;
     display: grid;
@@ -66,7 +78,7 @@ nav > ul {
     list-style: none;
     display: flex;
     justify-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 nav a {
@@ -78,6 +90,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Profile description */
 aside {
     grid-area: aside;
     display: grid;
@@ -94,11 +107,13 @@ aside {
     border-radius: 100%;
 }
 
+/* Main content */
 main {
     grid-area: main;
     background-color: yellow;
 }
 
+/* Page footer */
 footer {
     grid-area: footer;
     display: grid;
