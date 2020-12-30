@@ -111,6 +111,7 @@ aside {
     background-color: #000000;
     color: #ffffff;
     padding: 1em;
+    border-radius: 5px;
 }
 
 .profilepic {
@@ -138,6 +139,7 @@ main {
     box-shadow: 0 4px 8px 1px #666262;
     padding-left: 1em;
     padding-right: 1em;
+    background-color: #ffffff;
 }
 
 .cvcard a {
@@ -156,6 +158,7 @@ footer {
     justify-items: center;
     background-color: #000000;
     color: #ffffff;
+    border-radius: 5px;
 }
 
 footer > div {
