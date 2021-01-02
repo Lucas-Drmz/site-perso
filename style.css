@@ -27,6 +27,14 @@
     .profilepic{
         margin: 1em;
     }
+
+    .projectsection p {
+        font-size: 5vw;
+    }
+
+    footer {
+        font-size: 1vw;
+    }
 }
 
 @media screen and (min-width:1100px) and (orientation:landscape) {
@@ -61,6 +69,14 @@
     .linkedin {
         margin-bottom: 1em;
     }
+
+    .projectsection p {
+        font-size: 2vw;
+    }
+
+    footer {
+        font-size: 0.6vw;
+    }
 }
 
 body {
@@ -73,6 +89,10 @@ body p {
 
 h1, h2 {
     text-align: center;
+}
+
+h2 {
+    color: #048b9a;
 }
 
 /* Navigation */
@@ -96,7 +116,7 @@ nav > ul {
 nav a {
     text-decoration: none;
     font-weight: bold;
-    color: #000000;
+    color: #048b9a;
 }
 
 nav a:hover {
@@ -133,22 +153,35 @@ main {
     gap: 1em;
 }
 
-.cvcard {
+/* Main cards' style */
+.card {
     border: solid 1px #000000;
     border-radius: 10px;
     box-shadow: 0 4px 8px 1px #666262;
     padding-left: 1em;
     padding-right: 1em;
-    background-color: #ffffff;
 }
 
-.cvcard a {
+.card a {
     color: #000000;
 }
 
-.cvcard ol {
+.card ol {
     text-align: center;
     list-style: none;
+}
+
+/* Project cards' style */
+.projectsection {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.projectsection p {
+    color: #048b9a;
+    font-weight: bold;
+    text-align: center;
 }
 
 /* Page footer */
